@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5 - DOM Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="page">
+    <h1>DOM Demo — Day 5</h1>
+
+    <!-- =====================================================
+         TOPIC 1 — Selectors
+         Used in: mainDom.js → section 1
+         ===================================================== -->
+    <section class="demo-section" id="topic-selectors">
+      <h2>1) Selectors</h2>
+
+      <!-- getElementById -->
+      <h3 id="mainTitle">Hello Developers</h3>
+
+      <!-- getElementsByName -->
+      <input type="text" name="fname" id="nameInput" placeholder="name attribute = fname" value="John Doe">
+
+      <!-- getElementsByClassName / querySelector / querySelectorAll / getElementsByTagName -->
+      <ul id="itemList">
+        <li class="item">item11111111111111</li>
+        <li class="item">item2</li>
+        <li class="item">item3</li>
+      </ul>
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 2 — Content (innerHTML / innerText / textContent)
+         Used in: mainDom.js → section 2
+         ===================================================== -->
+    <section class="demo-section" id="topic-content">
+      <h2>2) Content</h2>
+      <div id="contentBox">
+        <p>Visible text</p>
+        <!-- This HTML comment is ignored by innerText -->
+        <p style="display: none;">Hidden text</p>
+      </div>
+      <div id="output" class="output-box">Output will appear here.</div>
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 3 — Attributes
+         Used in: mainDom.js → section 3
+         ===================================================== -->
+    <section class="demo-section" id="topic-attributes">
+      <h2>3) Attributes</h2>
+      <img id="demoImage" src="" alt="demo image" width="120" height="80"
+        style="background:#ddd; display:block; margin-bottom:10px;">
+      <a id="demoLink" href="https://example.com" target="_blank">Open Example</a>
+      <input type="text" id="attrInput" placeholder="Type here..." value="student">
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 4 — Styles and Classes
+         Used in: mainDom.js → section 4
+         ===================================================== -->
+    <section class="demo-section" id="topic-styles">
+      <h2>4) Styles and Classes</h2>
+      <h3 id="subTitle" class="product">Style Me</h3>
+      <button id="toggleThemeButton">Toggle Class</button>
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 5 — Click Event
+         Used in: mainDom.js → section 5
+         ===================================================== -->
+    <section class="demo-section" id="topic-click">
+      <h2>5) Click Event</h2>
+      <p id="clickResult">Click the button below.</p>
+      <button id="clickButton">Change Text</button>
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 6 — Mouse Events
+         Used in: mainDom.js → section 6
+         ===================================================== -->
+    <section class="demo-section" id="topic-mouse">
+      <h2>6) Mouse Events</h2>
+      <div id="hoverDiv" class="hover-card">Hover over me!</div>
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 7 — Keyboard / Input Events
+         Used in: mainDom.js → section 7
+         ===================================================== -->
+    <section class="demo-section" id="topic-keyboard">
+      <h2>7) Keyboard / Input</h2>
+      <input type="text" id="myInput" placeholder="Type something...">
+      <p id="charCount">Characters: 0</p>
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 8 — Focus and Blur
+         Used in: mainDom.js → section 8
+         ===================================================== -->
+    <section class="demo-section" id="topic-focus">
+      <h2>8) Focus and Blur</h2>
+      <input type="text" id="usernameField" placeholder="Focus on me!">
+      <p id="focusResult">Focus status will appear here.</p>
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 9 — Submit Event (Form)
+         Used in: mainDom.js → section 9
+         ===================================================== -->
+    <section class="demo-section" id="topic-submit">
+      <h2>9) Submit Event</h2>
+      <form id="myForm">
+        <input type="text" id="username" placeholder="Enter username" required>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formResult">Welcome message will appear here.</p>
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 10 — Change Event (Select)
+         Used in: mainDom.js → section 10
+         ===================================================== -->
+    <section class="demo-section" id="topic-change">
+      <h2>10) Change Event</h2>
+      <select id="mySelect">
+        <option value="">Choose a fruit</option>
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Cherry">Cherry</option>
+      </select>
+      <p id="selectedFruit">Favorite fruit: not selected yet.</p>
+    </section>
+
+
+    <!-- =====================================================
+         TOPIC 11 — Create / Append / Remove + event.target
+         Used in: mainDom.js → section 11
+         ===================================================== -->
+    <section class="demo-section" id="topic-dynamic">
+      <h2>11) Create / Append / Remove</h2>
+      <input type="text" id="newItemInput" placeholder="New item text">
+      <button id="addItemButton" >Add List Item</button>
+      <ul id="dynamicList">
+        <li class="item">item1 — click to remove</li>
+        <li class="item">item2 — click to remove</li>
+        <li class="item">item3 — click to remove</li>
+      </ul>
+      <div id="container" class="dynamic-container"></div>
+    </section>
+
+  </main>
+
+  <script src="mainDom.js"></script>
+</body>
+
+</html>

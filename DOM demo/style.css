@@ -1,0 +1,112 @@
+ .product {
+     color: #fff;
+     background-color: rgb(19, 28, 33) ;
+     padding: 10px;
+     font-size: 40px;
+ }
+
+ .productTwo {
+     color: #fff;
+     background-color: brown;
+     padding: 5px;
+     font-size: 30px;
+ }
+
+
+ .importantProb {
+     padding: 20px !important;
+     font-size: 24px;
+ }
+
+ .importantProb2 {
+     padding: 40px !important;
+ }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+.page {
+    width: min(900px, calc(100% - 40px));
+    margin: 30px auto;
+}
+
+.intro {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.demo-section {
+    background-color: #fff;
+    border: 1px solid #d7deea;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.output-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #eef4ff;
+    border: 1px solid #c7d8ff;
+}
+
+#itemList {
+    padding-left: 20px;
+}
+
+.item {
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+button,
+input,
+select {
+    margin: 8px 8px 8px 0;
+    padding: 10px 12px;
+    font-size: 16px;
+}
+
+.hover-card {
+    width: 220px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 12px 0;
+    transition: 0.3s;
+}
+
+.hover-active {
+    background-color: #ffe082;
+    transform: scale(1.03);
+}
+
+.demo-card {
+    border-radius: 30px;
+    color: #ffe082;
+}
+
+.input-focus {
+    border: 2px solid #2563eb;
+    outline: none;
+    background-color: #eff6ff;
+}
+
+.dynamic-container {
+    min-height: 80px;
+    border: 2px dashed #aac2ff;
+    border-radius: 10px;
+    background-color: #fafcff;
+}
+
+.created-item {
+    color: #1d4ed8;
+}

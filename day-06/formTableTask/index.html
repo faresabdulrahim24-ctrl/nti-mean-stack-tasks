@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form task</title>
+</head>
+<body>
+    <div id="input-div">
+        <div class="input-class">
+            <input type="text" id="fName" placeholder=" " required>
+            <label for="fName" >First name</label>
+        </div>
+        <div class="input-class">
+            <input type="text" id="lName" placeholder=" " required> 
+            <label for="lName">Last name</label>
+        </div>
+        <div class="input-class">
+            <input type="number" id="age" placeholder=" " required>
+            <label for="age">age</label>
+        </div>
+        <div class="radio-class" id="radio-input">
+            <span class="radio-title">graduated</span>
+    
+            <input type="radio" id="yes" name="graduationstatus">
+            <label class="radio-label" for="yes">yes</label>
+    
+            <input  type="radio" id="no" name="graduationstatus">
+            <label class="radio-label" for="no" >no</label>
+        </div class="btns">
+            <button type="submit" id="submit-button">submit</button>
+            <button type="submit" id="clear-button">Clear All</button>
+        </div>
+        <div id="search-container">
+            <input id="name-search" type="text" placeholder="Search by first or last name...">
+            <select id="grad-filter">
+                <option value="all">All</option>
+                <option value="yes">Graduated</option>
+                <option value="no">Not Graduated</option>
+            </select>
+        </div>
+        
+        <div id="user-table">
+        <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Graduated</th>
+            <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
